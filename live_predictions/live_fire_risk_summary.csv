@@ -1,7 +1,0 @@
-Frame,Zone,Detected Objects,Risk Score
-0,Zone A,OxygenTank,5
-20,Zone A,,5
-40,Zone A,,5
-60,Zone A,,5
-80,Zone A,"OxygenTank, OxygenTank",5
-100,Zone A,"OxygenTank, OxygenTank",5
