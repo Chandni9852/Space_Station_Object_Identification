@@ -53,7 +53,7 @@ app.post("/upload", upload.single("image"), (req, res) => {
 
     const imagePath = path.join(__dirname, "uploads", req.file.filename);
 
-    const command = `python detect_image.py "${imagePath}"`;
+    const command = `python3 detect_image.py "${imagePath}"`;
 
     exec(command, (error, stdout, stderr) => {
 
