@@ -11,9 +11,8 @@ app.use(express.json());
 
 app.use(
   "/predictions",
-  express.static(path.join(__dirname, "../predictions_web"))
+  express.static(path.join(__dirname, "predictions_web"))
 );
-
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "uploads/");
@@ -54,7 +53,7 @@ app.post("/upload", upload.single("image"), (req, res) => {
 
     const imagePath = path.join(__dirname, "uploads", req.file.filename);
 
-    const command = `python ../detect_image.py "${imagePath}"`;
+    const command = `python detect_image.py "${imagePath}"`;
 
     exec(command, (error, stdout, stderr) => {
 
