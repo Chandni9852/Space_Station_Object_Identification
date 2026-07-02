@@ -619,7 +619,7 @@ function LatestPrediction() {
       {latestPrediction ? (
         <>
           <img
-            src={`http://localhost:5000${latestPrediction.annotatedImage}`}
+            src={`https://space-station-backend.onrender.com${latestPrediction.annotatedImage}`}
             alt="Latest Detection"
             style={{
               width: "100%",

@@ -89,7 +89,7 @@ async function captureAndAnalyze() {
 	console.log("Sending image to backend...");
 	setAnalyzing(true);
     const response = await fetch(
-      "http://localhost:5000/upload",
+      "https://space-station-backend.onrender.com/upload",
       {
         method: "POST",
         body: formData,

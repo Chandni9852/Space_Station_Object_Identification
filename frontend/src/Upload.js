@@ -100,7 +100,7 @@ export default function Upload() {
     formData.append("image", file);
 
     try {
-      const res = await fetch("http://localhost:5000/upload", {
+      const res = await fetch("https://space-station-backend.onrender.com/upload", {
         method: "POST",
         body: formData,
       });

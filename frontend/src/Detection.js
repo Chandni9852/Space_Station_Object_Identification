@@ -107,7 +107,7 @@ function Detection() {
             </h2>
 
             <img
-              src={`http://localhost:5000${data.annotatedImage}`}
+              src={`https://space-station-backend.onrender.com${data.annotatedImage}`}
               alt="Prediction"
               style={{
                 width: "100%",
